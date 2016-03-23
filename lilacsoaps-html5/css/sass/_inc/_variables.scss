@@ -1,0 +1,55 @@
+$scheme: "light";
+
+$template-width: 1200px;
+
+$default-color: #9a9898;
+$body_bg: #fff;
+
+$primary-color: #155b90;
+$secondary-color: #555555;
+
+$default-font-size: 14px;
+$default-line-height: 1.25em;
+$default-font-weight: normal;
+
+
+$primary-font:'Roboto', sans-serif;
+$secondary-font:'Raleway', sans-serif;
+
+$theme-font1: $primary-font;
+$theme-font2: $secondary-font;
+
+
+
+$normal-font: $default-font-size;
+$small-font: 0.85em;
+$larger-font: 1.3em;
+$large-font: 1.8em;
+
+
+$font-color1: $default-color;
+$font-color2: $primary-color;
+$font-color3: $secondary-color;
+
+
+//Borders
+
+$border-width: 1px;
+$border-style: solid;
+$border-color: #ccc;
+
+$textarea-font-color: lighten($default-color, 0.4);
+$textarea-border-color: #cdcdcd;
+$textarea-background-color: #fefefe;
+
+//Color Scheme
+
+@if $scheme == "dark" {
+	$default-color: #fff;
+	$body_bg: #000;
+	
+	$border-color: #fff;
+	
+	$primary-color: #000;
+	$secondary-color: #9a9898;
+}

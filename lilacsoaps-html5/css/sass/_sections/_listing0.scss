@@ -1,0 +1,41 @@
+/*********************************/
+/* Listing */
+/*********************************/
+
+/*
+#listing0
+*/
+
+/*options-titles:: Controls the way the option titles display on the product page.*/
+.options-titles {
+    font-size: 18px;
+    font-weight: bold;
+    color: #585C5F;
+    padding: 5px;
+    border: 1px dotted #cccccc;
+    border-style: dotted none dotted none;
+}
+/*item:: Controls the item description and item details text.*/
+.item {
+    color: #2c3e50;
+    font-weight: 400;
+}
+/*availability-txt:: Controls the way the Availability of the product displays i.e. 'In Stock', 'Back Order'.*/
+.availability-txt {
+    color: #000;
+    text-decoration: none;
+    text-align: left;
+    padding: 0.2em;
+    font-style: italic;
+}
+/*reward-title:: Controls the title of the Reward Points section.*/
+.reward-title {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #850000;
+    text-decoration: none;
+    word-spacing: normal;
+    text-align: left;
+    letter-spacing: 7px;
+    line-height: 10px;
+    font-size: 16px;
+}

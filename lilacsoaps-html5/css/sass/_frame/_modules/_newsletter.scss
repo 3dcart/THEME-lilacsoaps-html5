@@ -1,0 +1,61 @@
+/*
+Mailing List
+-----------------*/
+.mailinglist {
+	margin-top: 30px;
+	@media(max-width: 767px) {
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 280px;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.mailinglist_text {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.mailinglist-form {
+	position: relative;
+	width: 100%;
+	max-width: 250px;
+	@include border;
+}
+.mailinglist-txt {
+	border: none;
+	height: 24px;
+	width: 100%;
+}
+.mailinglist-btn {
+	position: absolute;
+	width: auto;
+	border: none;
+	height: 100%;
+	color: #fff;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	border-left: 1px solid $secondary-color;
+	background: $secondary-color;
+	-webkit-appearance: none;
+    @include transition;
+	
+	&:hover {
+		border-left: 1px solid $primary-color;
+		background: $primary-color;
+	}
+}
+
+.mailinglist-options {
+	margin-top: 10px;
+}
+.mailinglist-subscribe {
+	line-height: 1;
+	margin-right: 10px;
+}
+.mailinglist-subscribe input[type="radio"] {
+	margin: 0;
+	margin-right: 5px;
+	float: left;
+}

@@ -1,0 +1,135 @@
+@import "variables";
+@import "mixins";
+
+/***************************************/
+/*	HELPER CLASSES           */
+/***************************************/
+
+/*********************************/
+/*          CUSTOM STYLES        */
+/*********************************/
+.left { float: left }
+.right { float: right }
+.clear { clear: both }
+.round {
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.width100 { width: 100% }
+.width50 { width: 50% }
+.ypad10 { padding: 10px 0px }
+.xpad10 { padding: 0px 10px }
+.txt-c { text-align: center !important }
+.hide { display: none }
+.relative { position: relative }
+.pad20 { padding: 20px }
+
+.hide {
+	display: none;
+}
+/*
+Container
+--------------------------*/
+.m-container {
+	width: 100%;
+	max-width: $template-width;
+	height: auto;
+	margin: 0 auto;
+	
+	@media (max-width : $template-width) {
+		max-width: 980px;
+	}
+		
+	@media(max-width: 1023px) {
+		max-width: 768px;
+		padding: 0 15px;
+	}
+}
+/*********************************/
+/*          Utilities       */
+/*********************************/
+/*
+GRID SYSTEM
+--------------------------*/
+.col-group:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .col-group             { zoom: 1; } /* IE6 */
+*:first-child+html .col-group { zoom: 1; } /* IE7 */
+
+.col-2, .col-xs-2,
+.col-3, .col-xs-3,
+.col-4, .col-xs-4, 
+.col-5, .col-xs-5,
+.col-6, .col-xs-6,
+.col-8, .col-xs-8 {
+	float: left;
+	display: inline-block;
+}
+.col-2,
+.col-xs-2 {
+	width: 20%;
+}
+.col-3,
+.col-xs-3 {
+	width: 25%;
+}
+.col-4,
+.col-xs-4{
+	width: 33.3333333%;
+}
+.col-5,
+.col-xs-5 {
+	width: 50%;
+}
+.col-6,
+.col-xs-6 {
+	width: 66.66666666%;
+}
+.col-8,
+.col-xs-8 {
+	width: 80%;
+}
+
+/*
+TYPOGRAPHY
+------------------------------*/
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
+/*
+Lists
+---------------------------------*/
+.list-inline {
+	@include list-inline;
+}
+/*
+Alignment
+-----------------*/
+.inline-left {
+	@include inline(left);
+}
+.inline-right {
+	@include inline(right);
+}
+/*
+Visibility
+-----------------*/
+.visible-tab {
+	@include visible-tab;
+}
+.visible-mob {
+	@include visible-mob;
+}

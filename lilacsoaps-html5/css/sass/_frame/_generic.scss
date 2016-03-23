@@ -1,0 +1,650 @@
+/*******************************************************************************************************/
+/*          STYLES USED ON THE FRAME OF THE WEBSITE (HEADER, LEFT NAV, RIGHT NAV AND FOOTER)        */
+/*******************************************************************************************************/
+/*body:: Controls website background and any other text outside of a table without an associated style.*/
+body {
+    font-family: $primary-font;
+    font-size: $normal-font;
+    color: $default-color;
+    background: $body_bg;
+    line-height: $default-line-height;
+    font-weight: $default-font-weight;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+	overflow-x: hidden;
+}
+/*mainframe:: Container for all the page elements not including the top bar if there is one.*/
+.mainframe {
+    width: 100%;
+    padding: 0px 0px;
+    margin: 0px auto 30px auto;
+    /*background: #fff;*/
+    position: relative;
+}
+/*mod_bg:: Controls the left and right column modules background.*/
+.mod_bg {
+    padding: 0px 0px 30px 0px;
+    background: none;
+    margin-bottom: 15px;
+	@include border-bottom;
+	ul.cat {
+		@include list-unstyled;
+		li {
+			line-height: 1.8;
+			a {
+				color: $default-color;
+				&:hover {
+					color: $primary-color;
+				}
+			}
+		}
+	}
+}
+/*
+iOS safari reset for input fields
+---------------*/
+input[type="button"],
+input[type="text"],
+input[type="submit"] {
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+/*************************/
+/*** ALL GLOBAL TITLES ***/
+/*************************/
+/*header-specials:: Styling for title of Featured Products.*/
+.header-specials {
+    background: none;
+    font-size: 18px;
+    color: #000;
+    text-transform: none;
+    text-decoration: none;
+    padding: 8px 0px;
+    line-height: 2;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+}
+/*menu-headers:: Controls the way the menu titles look. For example: Categories, Browse By Price, Top Sellers, etc.*/
+.menu-headers {
+    background: none;
+    font-size: 18px;
+    color: #000;
+    font-weight: normal;
+    text-transform: none;
+    text-decoration: none;
+    padding: 8px 0px;
+    line-height: 1.2;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+}
+/*page_headers:: Controls the title of all your pages.*/
+.page_headers {
+    font-size: $larger-font;
+    line-height: 1.6;
+    letter-spacing: 0px;
+    color: $default-color;
+    margin: 0px 0px 0px 0px;
+    text-transform: none;
+    padding: 0px 0px;
+    /*font-weight: 700;*/
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    text-align: left;
+    position: relative;
+}
+/*titles:: Controls the Tiles  of sections within pages on the site such as (Specials, Feature Items, Items, Related Items).*/
+.titles {
+	color: #fff;
+	background: $primary-color;
+    font-size: 1.1em;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    margin: 0px 0px 0px 0px;
+    text-transform: none;
+    padding: 0px 8px;
+    /*font-weight: 700;*/
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    text-align: left;
+    position: relative;
+}
+/*titles2:: Controls the titles on the view cart page*/
+.titles2 {
+    font-size: 1.1em;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    color: $secondary-color;
+    margin: 0px 0px 0px 0px;
+    text-transform: none;
+    padding: 0px 0px;
+    font-weight: bold;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    text-align: left;
+    position: relative;
+}
+
+/*******************************************************************************************************/
+/*          STYLES USED THROUGHTOUT THE WEBSITE        */
+/*******************************************************************************************************/
+/*Alignment fix for the use of the XHTML Transitional DOCTYPE.*/
+tr { text-align: left }
+/*td:: Controls all text inside a table without and associated style.*/
+td {
+    text-decoration: none;
+    word-spacing: normal;
+}
+/*data:: Controls the font style of your content on all the pages.*/
+.data {
+    letter-spacing: 0px;
+}
+/*alternative:: Controls the background color of the boxes used throughout the site.*/
+.alternative {
+    background: #fff;
+    padding: 2px 2px 2px 2px;
+    border: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+/*price:: Controls the way the product's final price display throughout the site.*/
+.price {
+    font-size: $larger-font;
+    color: $secondary-color;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+/*price2:: Controls the way the product's price display in the top sellers and new releases sections.*/
+.price2 {
+    font-size: $normal-font;
+    color: $default-color;
+    font-weight: bold;
+}
+/*error:: Controls the error messages*/
+.error {
+    font-size: $normal-font;
+    font-weight: $default-font-weight;
+    color: #e10e04;
+    text-decoration: none;
+}
+/*borders:: Controls the color of the line dividers used throughout the site.*/
+.borders {
+    color: $default-color;
+    @include border;
+}
+/*borders2:: Controls the color of the dotted line dividers used throughout the site.*/
+.borders2 {
+	@include border;
+    border-style: none none dotted;
+}
+/*A:: Controls the way the all Links without an associated style display before a user clicks or mouses over them.*/
+A, A:visited {
+	color: #000;
+	font-family: $primary-font;
+	@include transition(color, 200, ease);
+   
+    font-style: $default-font-weight;
+    text-decoration: none;
+    font-weight: $default-font-weight;
+}
+/*A:hover:: When a user passes  their mouse over them.*/
+A:hover, A:visited:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+/*******************************************************************************************************/
+/*   STYLES ONLY USED ON VIEW CART AND CHECKOUT PAGES      */
+/*******************************************************************************************************/
+/*checkout-headers:: Controls the titles of the sections on the checkout pages (Billing Information, Shipping Information etc)*/
+.checkout-headers {
+    font-size: $normal-font;
+    color: $default-color;
+    font-weight: bold;
+}
+/*steps:: Controls the way the steps on the checkout pages display.*/
+.steps {
+    font-size: $normal-font;
+    font-weight: bold;
+    color: lighten($default-color , 0.2);
+}
+/*steps_on:: Controls the way the step the customer is currently on displays on the checkout pages.*/
+.steps_on {
+    font-size: $normal-font;
+    font-weight: bold;
+    color: $secondary-color;
+}
+
+/*******************************************************************************************************/
+/*      FORM FIELDS & BUTTONS THROUGHOUT THE WEBSITE      */
+/*******************************************************************************************************/
+/*btn:: Controls the buttons, (ONLY if it is not using and image).*/
+.btn {
+    background: #000;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: $normal-font;
+    font-weight: normal;
+    color: #000;
+    border: 1px solid #ccc;
+    line-height: 22px;
+    padding: 2px 8px;
+    margin: 2px;
+    cursor: pointer;
+    -webkit-appearance: none;
+	border-radius: 0;
+	@include transition;
+}
+/*btn_over:: Controls the buttons when a user mouses over them, (ONLY if it is not using and image).*/
+.btn:hover, .btn_over {
+    background: #000;
+    text-align: center;
+    text-transform: lowercase;
+    font-size: $normal-font;
+    font-weight: normal;
+    color: #fff;
+    border: 1px solid #9a9898;
+    line-height: 22px;
+    padding: 2px 8px;
+    margin: 2px;
+    cursor: pointer;
+    -webkit-appearance: none;
+	border-radius: 0;
+    @include transition;;
+}
+/*txtBoxStyle:: Controls the text and style of the Text Boxes.*/
+.txtBoxStyle {
+    border: 1px solid $textarea-border-color;
+    background-color: $textarea-background-color;
+    font-weight: normal;
+    font-size: $normal-font;
+    color: $primary-color;
+    padding: 3px 1px 3px 8px;
+    font-family: $primary-font;
+}
+/*txtAreaStyle:: Controls the text and style of the Text Areas.*/
+.txtAreaStyle {
+    border: 1px solid $textarea-border-color;
+    background-color: $textarea-background-color;
+    font-weight: normal;
+    font-size: $normal-font;
+    color: $textarea-font-color;
+}
+/*txtSearch:: Controls the style of the Search Box, if different from txtBoxStyle.*/
+.txtBoxSearch {
+    height: 20px;
+    color: $textarea-font-color;
+    font-size: normal;
+    border: none;
+    padding: 3px 0px 0px 0px;
+    margin: 0;
+}
+
+/*******************************************************************************************************/
+/*   STYLES USED ONLY ON THE INVOICE        */
+/*******************************************************************************************************/
+/*invoice_table:: Controls the background color on your invoices*/
+.invoice_table { background-color: #f9f8f8 }
+/*invoice_title:: Controls the way the title of the invoices look */
+.invoice_title {
+    font-family: $primary-font;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: #ccc;
+    color: $default-color
+}
+img { border: none }
+
+/*************************************************************/
+/*          LEGACY STYLES: STYLES USED PRIOR TO v3.2         */
+/*************************************************************/
+/*font1:: Primary Screen Font */
+.font1 {
+    font-family: $primary-font;
+    font-size: $normal-font;
+    font-weight: normal;
+    color: $default-color;
+}
+/*font2:: Secondary Screen Font */
+.font2 {
+    font-family: $primary-font;
+    font-size: 14px;
+    font-weight: normal;
+    color: $primary-color;;
+}
+.font3 {
+    font-family: $primary-font;
+    font-size: normal-font;
+    font-weight: normal;
+    color:  $secondary-color;
+}
+.font4 {
+    font-family: $primary-font;
+    font-size: normal-font;
+    font-weight: normal;
+    color: $primary-color;
+}
+/*top:: Controls the  Color of the top Bar*/
+.top { }
+/*line:: Controls the  Color of the line below the top bar*/
+.line { }
+
+/*store-name:: Store Name.*/
+.store-name {
+    font-family: $primary-font;
+    font-size: 54px;
+    font-weight: bold;
+    line-height: 50px;
+    color: $primary-color;
+    text-transform: uppercase;
+    display: block;
+}
+/*store-slogan:: Store Slogan.*/
+.store-slogan {
+    font-family: $secondary-font;
+    font-size: 23px;
+    color: $secondary-color;
+    font-weight: normal;
+    font-style: italic;
+    text-transform: none;
+    line-height: 24px;
+    display: block;
+}
+
+/*footer::  This style controls the text you type under global footer. Merchants usually use to add security logos, credit card logos, privacy notes, etc.*/
+.footer {
+    background: none;
+    font-family: $primary-font;
+    font-size: $normal-font;
+    font-weight: normal;
+    line-height: 1.1;
+    color: #ccc;
+    text-align: left;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+/*footerLinks::  Controls the way the Footer Links display in the Global Footer.*/
+.footer a, .footer a:visited, .footer a:hover, .footer a:visited:hover {
+    font-family: $primary-font;
+    font-size: $small-font;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+/*
+START: SELECTION COLORS
+-------------------*/
+::-moz-selection {
+    background: $primary-color;
+    color: #fff;
+    text-shadow: none;
+}
+::selection {
+    background: $primary-color;
+    color: #fff;
+    text-shadow: none;
+}
+
+/*
+Place Holder
+------------------*/
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+
+
+/*********************************/
+/*Frame*/
+/*********************************/
+#TS_items, #NR_items, #Category_items, #Brands_items, #Prices_items { }
+#TS_items, #NR_items { position: relative }
+
+#mainContainer {
+    width: 100%;
+    padding-bottom: 15px;
+    margin: 0px;
+    min-height: 400px;
+    background: none;
+}
+#midContent {
+    float: left;
+    background: none;
+    width: 100%;
+    padding: 0px 0px;
+    margin: 0px;
+    min-height: 400px;
+}
+#leftContent {
+    float: left;
+    width: 200px;
+    background: none;
+    margin: 0px 12px 0px 0px;
+    padding: 0px 10px 0px 0px;
+	@include border-right(1px,solid, #ccc);
+    position: relative;
+	@include hidden-tab;
+}
+#rightContent { }
+#midContent img { }
+
+
+/*********************************/
+/*Global Product Display Styling*/
+/*********************************/
+.productBlockContainer { margin: 0 -10px }
+.product-container {
+    margin: 0;
+    padding: 0 10px 20px 10px;
+	
+	@media(max-width: 767px)  {
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+		margin: 0 auto 15px auto !important;
+		display: block;
+		max-width: 300px;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		float: none;
+		display: block;
+	}
+}
+.product-container.middle-item { padding: 0 10px !important }
+.product-container.first-item { padding-left: 10px !important }
+.product-container.last-item { padding-right: 10px !important }
+.product-item {
+    padding: 8px;
+    margin: 0px auto 0px auto;
+    text-align: center;
+    position: relative;
+    background: #fff;
+    min-height: inherit;
+}
+.product-item:hover, .product-item:hover { /*@include border;*/ }
+.product-item .img {
+    padding: 0px;
+    background: #fff;
+    width: 100%;
+    height: 220px;
+    min-height: initial;
+	border: 1px solid #ddd;
+    position: relative;
+}
+.product-item .img img {
+    max-width: 100%;
+    max-height: 150px;
+    min-height: inherit;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.product-item .content {
+    position: relative;
+    width: 100%;
+    margin: 5px auto 5px auto;
+    padding: 0px 8px;
+    background: none;
+    overflow: hidden;
+    text-align: left;
+}
+.product-item .name {
+    font-size: $larger-font;
+    font-family: $primary-font;
+    font-weight: lighter;
+    color: $default-color;
+	height: 46px;
+    text-align: left;
+    line-height: 23px;
+    min-height: 0;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px 0px 3px 0px;
+}
+.product-item .name a {
+    font-size: $normal-font;
+    font-family: $primary-font;
+    font-weight: bold;
+    color: $default-color;
+    line-height: 23px;
+    text-transform: none;
+}
+.product-item .name a:hover {
+    color: #9a9898;
+    text-decoration: underline;
+}
+.product-item .price {
+    width: 100%;
+    font-size: $normal-font;
+    font-weight: bold;
+    color: #ff0004;
+    text-align: left;
+    line-height: 26px;
+    height: 26px;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    vertical-align: top;
+    overflow: hidden;
+}
+.product-item .price img { vertical-align: top }
+.product-item .stars {
+    float: none;
+    line-height: 16px;
+    height: 16px;
+    margin: 5px 0px;
+    position: relative;
+    text-align: left;
+}
+.product-item .stars img {
+    display: block;
+    vertical-align: middle;
+    float: left;
+    margin: auto;
+}
+.product-item .stars span {
+    float: none;
+    display: none;
+}
+.product-item .action { 
+    text-align: left; 
+	background-color: #fff; 
+	color: #000; 
+	text-transform: lowercase; 
+	font-weight: normal; 
+}
+.product-item .status {
+    visibility: hidden;
+    height: 49px;
+    display: none;
+}
+.product-item .qty {
+    font-size: 18px;
+    margin-top: 15px;
+}
+.product-item .qty input {
+    text-align: center;
+    font-size: $normal-font;
+    font-family: $primary-font;
+    font-weight: 400;
+    color: $primary-color;
+}
+.product-item s, .product-item .price2, .product-item del {
+    font-size: $normal-font;
+    font-family: $primary-font;
+    font-weight: normal;
+    color: $secondary-color;
+    padding-right: 2px;
+}
+.product-item .onsale, .product-item .on-sale {
+    background: #ff0004;
+    width: 49px;
+  	height: 21px;
+  	line-height: 22px;
+  	position: absolute;
+  	right: 8px;
+  	top: 8px;
+    z-index: 1;
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+    font-family: $primary-font;
+    font-weight: 400;
+	text-transform: uppercase;
+    opacity: 1;
+	padding: 0;
+	-webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;   
+    -webkit-border-radius: 0;  
+    -moz-border-radius: 0;  
+    border-radius: 0; 
+}
+.product-item {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.product-item:hover {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#midContent img {
+	max-width: 100%;
+}
+.header-specials {
+	color: #000;
+    font-weight: 100;
+	font-family: $primary-font;
+	text-transform:capitalize;
+	text-align: center;
+	line-height: 30px;
+	font-size: 18px;
+	margin: 0 auto;
+	max-width: 100%;
+	margin-top:50px;
+	margin-bottom:65px;
+}
+#home .header-specials {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 1;
+  padding: 0;
+  text-align: center;
+  color: #000;
+  font-weight: normal;
+}
+div#Frame_Banners {
+	margin-top: 12px;
+}

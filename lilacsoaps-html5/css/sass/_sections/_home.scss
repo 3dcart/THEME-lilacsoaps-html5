@@ -1,0 +1,105 @@
+#home {
+	.header-specials {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		line-height: 1;
+		padding: 0;
+		
+		@media(max-width: 767px) {
+			max-width: 300px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	#homeCarousel {
+		margin-top: 0px;
+	}
+}
+/*********************************/
+/*HomePage and Carousel*/
+/*********************************/
+#HOME { }
+#HOME > div { }
+.home-width { }
+.home-width img { display: block }
+#HOME > div.home-width { text-align: justify }
+#home_carousel {
+    width: 100%;
+    float: left;
+}
+#home_carousel > div { }
+.homepage_silder {
+    margin-bottom: 10px !important;
+    margin: 0px auto !important;
+}
+.flexslider { background: transparent !important }
+.flex-control-nav {
+    bottom: 10px !important;
+    z-index: 10;
+    text-align: right !important;
+    padding: 0 10px !important;
+}
+.flex-control-nav li { margin: 0 4px !important }
+.flex-direction-nav a { line-height: 40px }
+.flex-control-paging li a {
+    background: #ff0066 !important;
+    background: rgba(255, 0, 102, 1) !important;
+    font-size: 0px !important;
+    width: 12px !important;
+    height: 12px !important;
+}
+.flex-control-paging li a:hover {
+    background: #8fd100 !important;
+    background: rgba(143, 209, 0, 0.8) !important;
+}
+.flex-control-paging li a.flex-active {
+    background: #8fd100 !important;
+    background: rgba(143, 209, 0, 1) !important;
+}
+#HOME { }
+.promos { }
+.feat-item-list { margin-bottom: 20px }
+
+/*
+Homepage banner
+------------------*/
+.homepage-banners {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
+	.homepage-banner {
+		@include inline(left);
+		width: 22%;
+		margin-left: 4%;
+		
+		&:first-child {
+			margin-left: 0;
+		}
+		
+		img {
+			width: auto;
+			height: auto;
+			max-width: 100%;
+			display: block;
+		}
+		
+		@media(max-width: 1023px) {
+			width: 48%;
+			margin-left: 4%;
+			margin-bottom: 4%;
+			
+			&:nth-child(odd) {
+				margin-left: 0;
+			}
+		}
+		@media(max-width: 767px) {
+			display: block;
+			float: none;
+			width: 100%;
+			max-width: 480px;
+			margin-left: auto !important;
+			margin-right: auto !important;
+			margin-bottom: 15px;
+		}
+	}
+}
